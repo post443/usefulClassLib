@@ -1,1 +1,1 @@
-[获取手机操作系统](https://note.youdao.com/)
+1. [获取手机操作系统](https://github.com/post443/usefulClassLib/blob/master/JavaScript/index.js#L1)
