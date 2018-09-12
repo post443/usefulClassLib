@@ -1,0 +1,36 @@
+<!Doctype <!DOCTYPE html>
+<html lang="cn-Zh">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Music</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <audio id="music">
+            <source src="01.mp3" type="audio/mpeg">
+            Your browser does not support this audio format.
+    </audio>
+    <button onclick="music.start()">开始</button>
+    <button onclick="music.stop()">停止</button>
+    <button onclick="music.pause()">暂停</button>
+</body>
+<script>
+let music = {
+    el:document.getElementById("music"),
+    start:function(){
+        this.el.play();
+        return '播放开始';
+    },
+    pause:function(){
+        this.el.pause();
+        return '已暂停';
+    },
+    stop:function(){
+        this.el.pause();
+        this.el.load();
+        return '播放结束';
+    }
+};
+</script>
+</html>
